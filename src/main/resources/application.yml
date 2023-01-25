@@ -1,0 +1,10 @@
+kafka: 
+  bootstrap-servers: localhost:9092
+
+  topic:
+    spring-integration-kafka: integration-topic
+logging:
+  level:
+    root: info
+    '[com.farhad.example]': info
+        
