@@ -1,4 +1,6 @@
-package com.farhad.example.demo.si.kafka;
+package com.farhad.example.demo.si.kafka.inbound;
+
+import static com.farhad.example.demo.si.kafka.inbound.KafkaConstants.*;
 
 import java.util.Collections;
 import java.util.Map;
@@ -14,7 +16,6 @@ import org.springframework.messaging.support.GenericMessage;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import static com.farhad.example.demo.si.kafka.KafkaConstants.*;
 
 @Configuration
 @RequiredArgsConstructor

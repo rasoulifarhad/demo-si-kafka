@@ -5,7 +5,7 @@ kafka:
     spring-integration-kafka: integration-topic
 logging:
   level:
-    root: info
+    root: off
     '[com.farhad.example]': info
 spring: 
   main: 

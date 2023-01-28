@@ -1,4 +1,4 @@
-package com.farhad.example.demo.si.kafka;
+package com.farhad.example.demo.si.kafka.inbound;
 
 public class KafkaConstants {
 

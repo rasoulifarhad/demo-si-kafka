@@ -1,4 +1,4 @@
-package com.farhad.example.demo.si.kafka;
+package com.farhad.example.demo.si.kafka.inbound;
 
 import java.util.concurrent.CountDownLatch;
 

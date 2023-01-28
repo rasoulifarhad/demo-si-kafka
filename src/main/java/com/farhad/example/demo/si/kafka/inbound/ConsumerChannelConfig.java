@@ -1,4 +1,9 @@
-package com.farhad.example.demo.si.kafka;
+package com.farhad.example.demo.si.kafka.inbound;
+
+import static com.farhad.example.demo.si.kafka.inbound.KafkaConstants.ANOTHER_KAFKA_FLOW_GROUP;
+import static com.farhad.example.demo.si.kafka.inbound.KafkaConstants.ANOTHER_KAFKA_FLOW_TOPIC;
+import static com.farhad.example.demo.si.kafka.inbound.KafkaConstants.KAFKA_FLOW_GROUP;
+import static com.farhad.example.demo.si.kafka.inbound.KafkaConstants.KAFKA_FLOW_TOPIC;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,21 +26,14 @@ import org.springframework.integration.kafka.support.RawRecordHeaderErrorMessage
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
-import org.springframework.kafka.listener.CommonLoggingErrorHandler;
 import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 import org.springframework.kafka.listener.ContainerProperties;
-import org.springframework.kafka.listener.KafkaMessageListenerContainer;
-import org.springframework.kafka.listener.LoggingErrorHandler;
 import org.springframework.kafka.listener.ContainerProperties.AckMode;
-import org.springframework.kafka.support.KafkaHeaders;
-import org.springframework.messaging.Message;
+import org.springframework.kafka.listener.KafkaMessageListenerContainer;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.retry.support.RetryTemplate;
 
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
-
-import static  com.farhad.example.demo.si.kafka.KafkaConstants.*;
 @Configuration
 @Slf4j
 public class ConsumerChannelConfig {
